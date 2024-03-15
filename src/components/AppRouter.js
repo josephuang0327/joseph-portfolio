@@ -1,4 +1,9 @@
 import React from 'react'
+import Home from '../pages/Home'
+import Education from '../pages/Education'
+import Project from '../pages/Project'
+import Skills from '../pages/Skills'
+import Contact from '../pages/Contact'
 
 function AppRouter() {
   return (
