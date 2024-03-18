@@ -1,34 +1,36 @@
 import React, { useState } from "react";
-
+import "../stylesheets/Navbar.css"
+import LangSwitch from './LangSwitch.js'
 function Navbar(){
-    const [navOpen, setNavOpen] = React.useState(false);
+    const location = window.location.href.split("/#")[1]
 
+    const [navOpen, setNavOpen] = React.useState(false);
 
     const handleNavOpen = () => {
         setNavOpen(true)
+        console.log("true")
     }
     const handleNavClose = () => {
         setNavOpen(false)
+        
     }
 
     return (
         <>
             <div className="navbar-container" onMouseLeave={handleNavClose}>
+            <a className="navbar-name-logo" href="/personal-portfolio/#/">Joseph Huang</a>
                 <ul className="navbar-tabs">
-                    <li className="navbar-name-logo">Joseph Huang</li>
-                    <li className="navbar-tab-item">Home</li>
-                    <li className="navbar-tab-item">About</li>
-                    <li className="navbar-tab-item">Education</li>
-                    <li className="navbar-tab-item">Skills</li>
-                    <li className="navbar-tab-item">Projects</li>
-                    <li className="navbar-tab-item">Contact</li>
+                    <li className={"navbar-tab-item"}><a href="/personal-portfolio/#/">Home</a></li>
+                    <li className={"navbar-tab-item"} onMouseEnter={handleNavOpen}><a href="">About</a></li>
+                    <li className={navOpen === true ? "nav-item-open nav-tab-item" : "nav-item-close nav-tab-item"}><a href="/personal-portfolio/#/education/">Education</a></li>
+                    <li className={navOpen === true ? "nav-item-open nav-tab-item" : "nav-item-close nav-tab-item"}><a href="/personal-portfolio/#/skills/">Skills</a></li>
+                    <li className={navOpen === true ? "nav-item-open nav-tab-item" : "nav-item-close nav-tab-item"}><a href="/personal-portfolio/#/projects/">Projects</a></li>
+                    <li className={"navbar-tab-item"}><a href="/personal-portfolio/#/contact/">Contact</a></li>
                 </ul>
+                <LangSwitch />
             </div>
-            <div className="navbar-lang-switch">
-                <div className="navbar-lang-chinese"></div>
-                <div className="navbar-lang-English"></div>
-            </div>
-            <div className="line-seperator"></div>
+            
+            <hr />
         </>
     )
 }

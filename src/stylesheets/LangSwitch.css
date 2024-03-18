@@ -1,0 +1,10 @@
+.navbar-lang-english{
+    margin-left: 1rem;
+}
+
+button{
+    border-radius: 16px;
+    height: 2rem;
+    padding: 0 0.5rem;
+    letter-spacing: 1px;
+}
