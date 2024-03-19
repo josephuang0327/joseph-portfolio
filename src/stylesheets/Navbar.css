@@ -84,7 +84,7 @@ a, a:visited{
     display: none;
 }
 
-hr{
+.nav-hr{
 	margin: 0;
 	border: 1px solid var(--color-hr-seperator);
 }

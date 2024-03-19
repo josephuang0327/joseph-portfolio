@@ -18,6 +18,7 @@ code {
   --color-primary: #CFC1AE;
   --color-secondary:#BEA888;
   --color-tertiary: #E8DAC7;
+  --color-bg-secondary: rgba(196,182,163,0.8);
   --color-text: #000000;
   --color-text-secondary: rgb(110, 110, 110);
   --color-hr-seperator: rgba(99, 99, 99,0.25);
@@ -38,6 +39,9 @@ html, body{
   flex-direction: column;
   min-height: 100vh;
   justify-content: center;
+}
+.edu-wrapper{
+  min-height: 100vh;
 }
 
 .home-container{
@@ -95,4 +99,93 @@ html, body{
   color: white;
 }
 
-/* Home page css ENDS here */
+/* Home page CSS ENDS here */
+
+
+/* Educationme page CSS STARTS here */
+
+.edu-asu-container{
+  background-color: var(--color-bg-secondary);
+  margin-top: 5rem;
+  padding-top: 1rem;
+}
+.edu-tsa-container{
+  background-color: var(--color-bg-secondary);
+  margin-top: 8rem;
+  padding-top: 1rem;
+}
+.asu-header{
+  display: flex;
+  justify-content: center;
+}
+.asu-logo-container{
+  width: 35rem;
+  padding: 1.5rem 0;
+}
+.asu-logo-container > img{
+  width: 100%;
+}
+
+.asu-header-hr{
+  margin: 0 auto;
+	border: 1px solid var(--color-hr-seperator);
+  width: 85vw;
+}
+.award-title-container{
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+.award-title-hr{
+  margin: 0 auto;
+	border: 1px solid var(--color-hr-seperator);
+  width: 35vw;
+  height: 0;
+}
+.asu-content{
+  padding: 1rem 12rem;
+  line-height: 1.5rem;
+}
+.asu-content-tabs{
+  display: flex;
+  justify-content: center;
+}
+.asu-tab-item{
+  margin: 0 0.5rem;
+  text-decoration: underline;
+}
+.asu-tabs-hr{
+  border: 1px solid var(--color-hr-seperator);
+  width: 55vw;
+}
+
+.award-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 20px;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.tsa-logo-container{
+  width: 11rem;
+  height: 11rem;
+  position: relative;
+  top: -5rem;
+  margin-right: 4rem;
+  margin-left: auto;
+}
+.tsa-logo-container > img{
+  width: 100%;
+  clip-path: circle();
+}
+.edu-tsa-title{
+  margin-left: 4rem;
+}
+
+.edu-title{
+  font-size: 1.5rem;
+}
+
+
+/* Education page CSS ENDS here */

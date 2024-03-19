@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import {port_test} from '../resources/images/images'
+import {port_test} from '../resources/images/images.js'
 
 function Home(){
     return (
