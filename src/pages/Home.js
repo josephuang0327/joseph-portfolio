@@ -6,8 +6,8 @@ import {port_test} from '../resources/images/images'
 function Home(){
     return (
         <>
-            <Navbar/>
-            
+        <Navbar/>
+        <div className="home-wrapper">
             <div className="home-container">
                 <div className="home-content">
                     <h1 className="home-intro">Hey, This is <br /> Joseph Huang</h1>
@@ -17,8 +17,8 @@ function Home(){
                 </div>
                 <div className='img-container'><img src={port_test} alt="home-photo" className="home-photo" /></div> 
             </div>
-
-            <Footer/>
+        </div>
+        <Footer/>
         </>
     )
 }

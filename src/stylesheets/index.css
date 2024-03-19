@@ -11,10 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/*above are react built-in css reset */
+
+
+:root{
+  --color-primary: #CFC1AE;
+  --color-secondary:#BEA888;
+  --color-tertiary: #E8DAC7;
+  --color-text: #000000;
+  --color-text-secondary: rgb(110, 110, 110);
+  --color-hr-seperator: rgba(99, 99, 99,0.25);
+}
+
+
+
+/* above are setting */
+
+html, body{
+  background-color: var(--color-primary) ;
+	color:var(--color-text);
+}
+
+/* Home page CSS STARTS here */
+.home-wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+}
 
 .home-container{
+  margin-top: -8rem;
   display: flex;
-  height: 75vh;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -32,7 +60,7 @@ code {
 .home-intro-description{
   font-size: 1.5rem;
   font-weight: bold;
-  color: rgb(110, 110, 110);
+  color: var(--color-text-secondary)
 }
 
 .home-intro-btn{
@@ -49,7 +77,7 @@ code {
 .home-intro-download{
   float: right;
   font-weight: bold;
-  background-color: #E8DAC7;
+  background-color: var(--color-tertiary);
 }
 
 .img-container{
@@ -62,3 +90,6 @@ code {
   position: relative;
   clip-path: circle()
 };
+
+
+/* Home page css ENDS here */

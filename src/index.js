@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './stylesheets/index.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AppRouter from './components/AppRouter';
-
+import './stylesheets/index.css'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

@@ -1,10 +1,19 @@
 .navbar-lang-english{
     margin-left: 1rem;
+    letter-spacing: 1px;
 }
-
+.navbar-lang-chinese{
+    padding-left: 0.75rem;
+    letter-spacing: 0.5rem;
+}
 button{
     border-radius: 16px;
     height: 2rem;
     padding: 0 0.5rem;
-    letter-spacing: 1px;
+    background-color: var(--color-primary);
+    font-weight: bold;
+}
+.navbar-lang-switch{
+    display: flex;
+    align-items: center;
 }

@@ -1,0 +1,24 @@
+
+.footer-container{
+    background-color: var(--color-secondary);
+    padding: 1rem 0;
+}
+.social-contact{
+    background-color: var(--color-secondary) ;
+    text-align: center;
+}
+
+.social-contact > button{
+    margin: 0 0.5rem;
+}
+
+.footer-rights-reserved{
+    background-color: var(--color-secondary) ;
+    margin-top: 0.75rem;
+    text-align: center;
+    font-size: 0.75rem;
+}
+svg{
+    width: 0.625rem;
+    margin-right: 0.25rem;
+}

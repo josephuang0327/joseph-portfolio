@@ -18,7 +18,7 @@ function Navbar(){
     return (
         <>
             <div className="navbar-container" onMouseLeave={handleNavClose}>
-            <a className="navbar-name-logo" href="/personal-portfolio/#/">Joseph Huang</a>
+                <a className="navbar-name-logo" href="/personal-portfolio/#/">Joseph Huang</a>
                 <ul className="navbar-tabs">
                     <li className={"navbar-tab-item"}><a href="/personal-portfolio/#/">Home</a></li>
                     <li className={"navbar-tab-item"} onMouseEnter={handleNavOpen}><a href="">About</a></li>
@@ -30,7 +30,7 @@ function Navbar(){
                 <LangSwitch />
             </div>
             
-            <hr />
+            {/* <hr /> */}
         </>
     )
 }
