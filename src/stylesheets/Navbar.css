@@ -23,7 +23,6 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
     text-decoration: none;
-	color: black;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -56,18 +55,28 @@ table {
     justify-content: space-between;
     padding: 1rem 2rem;
 	align-items: center;
-	background-color: #BEA888 ;
-	color:black;
+	background-color: var(--color-secondary);
 	font-weight: 550;
+}
+.navbar-name-logo{
+	color:var(--color-text);
+}
+a, a:visited{
+	color:var(--color-text);
 }
 .navbar-tabs{
     display:flex;
    
 }
-.navbar-tabs li{
+.navbar-tabs > li{
     margin: 0 1rem;
 }
-
+.bi-download{
+	-webkit-text-stroke: 0.5px black;
+}
+.bi-plus{
+	-webkit-text-stroke: 0.5px white;
+}
 .nav-item-open{
     
 }

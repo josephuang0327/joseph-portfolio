@@ -91,5 +91,8 @@ html, body{
   clip-path: circle()
 };
 
+.bi-plus{
+  color: white;
+}
 
 /* Home page css ENDS here */
