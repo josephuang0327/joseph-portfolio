@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useState } from "react";
 import Navbar from '../components/Navbar.js'
 import Footer from '../components/Footer.js'
 import {asu_fullname_logo, uiuc_logo, new_tsa, asu_welcome_event} from '../resources/images/images.js'
 import {asu_new_year, asu_santa_monica, asu_tisa_basketball, french_home_party, asu_bowling} from '../resources/images/images.js'
 function Education() {
+
+  const [tabShow, setTabShow] = React.useState("information")
+
+  const handleTabChange = (tabName) => {
+    setTabShow(tabName)
+  }
+
+
   return (
     <>
       <Navbar />
@@ -19,16 +27,20 @@ function Education() {
               <div className="asu-content">
 
                 <ul className="asu-content-tabs">
-                  <li className="asu-info-tab asu-tab-item">
-                    <span className="asu-tab-bi bi-info-circle"></span><br />Info</li>
-                  <li className="asu-course-tab asu-tab-item">
-                    <span className="asu-tab-bi bi-card-list"></span><br />Courses</li>
-                  <li className="asu-project-tab asu-tab-item">
-                    <span className='asu-tab-bi bi-file-code'></span><br />Projects</li>
+                  <li className={tabShow === "information" ? "asu-info-tab asu-tab-item" : "asu-info-tab asu-tab-item tab-unselected"} 
+                    onClick={() =>handleTabChange("information")}>
+                    <span className="asu-tab-bi bi-info-circle"></span> Information</li>
+
+                  <li className={tabShow === "courses" ? "asu-course-tab asu-tab-item" : "asu-info-tab asu-tab-item tab-unselected"}
+                    onClick={() =>handleTabChange("courses")}>
+                    <span className="asu-tab-bi bi-card-list"></span> Courses</li>
+                    
+                  <li className= {tabShow === "projects" ? "asu-project-tab asu-tab-item" : "asu-info-tab asu-tab-item tab-unselected"}
+                    onClick={() =>handleTabChange("projects")}>
+                    <span className='asu-tab-bi bi-file-code'></span> Projects</li>
                 </ul>
-                <hr className="asu-tabs-hr" />
                 <div className="asu-tab-content">
-                  <div className="asu-info-content-tab">
+                  <div className={tabShow === "information" ? "asu-info-content-tab" : "asu-info-content-tab tab-item-hide"}>
                     <div className="asu-info-stats">
                       <p className="asu-school">School: Ira A. Fulton Schools of Engineering</p>
                       <p className="asu-degree">Degree: Bachelor of Science</p>
@@ -37,11 +49,53 @@ function Education() {
                       <p className="asu-attend-years">Years attended: [2018 - 2022]</p>
                     </div>
                   </div>
-                  <div className="asu-course-content-tab">
+                  <div className={tabShow === "courses" ? "asu-course-content-tab" : "asu-course-content-tab tab-item-hide"}>
+                    <ul className="course-list">
+                      <li className="course-category">Programing Language
+                        <li className="course-item">Intro to Programming Languages [C++]</li>
+                        <li className="course-item">Principle of Programming Language [C++]</li>
+                        <li className="course-item">Principles of Programming [Java]</li>
+                        <li className="course-item">Object-Oriented Program & Data [Java]</li>
+                        <li className="course-item">Computer Org/Assemb Lang Prog</li>
+                      </li>
+                      <li className="course-category">Mathematics
+                        <li className="course-item">Calculus for Engineers I</li>
+                        <li className="course-item">Calculus for Engineers II</li>
+                        <li className="course-item">Calculus for Engineers III</li>
+                        <li className="course-item">Discrete Mathematics</li>
+                        <li className="course-item">Applied Linear Algebra</li>
+                        <li className="course-item">Prob & Stats Engr Prob Solving</li>
+                      </li>
+                      <li className="course-category">Software Development
+                        <li className="course-item">Intro to Software Engineering</li>
+                        <li className="course-item">Software Analysis and Design</li>
 
+                      </li>
+                      <li className="course-category">Algorithm
+                        <li className="course-item">Intro Theoretical Computer Science</li>
+                        <li className="course-item">Data Structures and Algorithms</li>
+                      </li>
+                      
+                      <li className="course-category">Game Development
+                        <li className="course-item">Game Development I</li>
+                        <li className="course-item">Game Development II</li>
+                        <li className="course-item">Fundamentals of Game Art</li>
+                      </li>
+                      <li className="course-category">Cybersecurity
+                        <li className="course-item">Information Assurance</li>
+                        <li className="course-item">Computer and Network Forensics</li>
+                      </li>
+                      <li className="course-category">Web Development
+                        <li className="course-item">Intro to Human Computer Interaction</li>
+                        <li className="course-item">Distributed Software Development</li>
+                      </li>
+                      <li className="course-category">Machine Learning
+                        <li className="course-item">Found of Machine Learning</li>
+                      </li>
+                    </ul>
                   </div>
-                  <div className="asu-project-content-tab">
-
+                  <div className={tabShow === "projects" ? "asu-project-content-tab" : "asu-project-content-tab tab-item-hide"}>
+                    in projects
                   </div>
                 </div>
               </div>

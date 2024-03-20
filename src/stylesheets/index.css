@@ -25,7 +25,6 @@ code {
 }
 
 
-
 /* above are setting */
 
 html, body{
@@ -103,7 +102,9 @@ html, body{
 
 
 /* Educationme page CSS STARTS here */
-
+.edu-wrapper{
+  transform: translateY(-1rem);
+}
 .edu-asu-container{
   background-color: var(--color-bg-secondary);
   margin-top: 5rem;
@@ -141,22 +142,36 @@ html, body{
 }
 .asu-content-tabs{
   display: flex;
+  width: 80%;
+  margin: 0 auto;
+  gap: 0.25rem;
+}
+.asu-tab-content{
+  background-color: var(--color-secondary);
+  padding: 1rem 0;
+  display: flex;
   justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 0 0.75rem 0.75rem 0.75rem;
 }
 
 .asu-tab-item{
-  margin: 0 1.5rem;
-  text-decoration: underline;
+  padding: 0.25rem 1rem;
   text-align: center;
+  cursor: pointer;
+  background-color: var(--color-secondary);
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+.tab-unselected{
+  background-color: #beae95;
+  /* #afa08a */
 }
 .asu-tab-bi{
   text-align: center;
   font-size: 1.5rem;
 }
-.asu-tabs-hr{
-  border: 1px solid var(--color-hr-seperator);
-  width: 55vw;
-}
+
 .asu-info-content-tab{
   display: flex;
 }
@@ -164,10 +179,27 @@ html, body{
   margin: 0 auto;
 }
 
+.tab-item-hide{
+  display: none;
+} 
+.course-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1.25rem;
+  grid-column-gap: 1rem;
+}
+.course-item {
+  list-style: circle;
+  margin-left: 1rem;
+}
+
+
+
+
 .award-list{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-row-gap: 20px;
+  grid-row-gap: 1.25rem;
   text-align: center;
   padding-bottom: 1.5rem;
 }
