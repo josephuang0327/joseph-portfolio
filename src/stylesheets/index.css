@@ -109,24 +109,17 @@ html, body{
   margin-top: 5rem;
   padding-top: 1rem;
 }
-.edu-tsa-container{
-  background-color: var(--color-bg-secondary);
-  margin-top: 8rem;
-  padding-top: 1rem;
-}
-.asu-header{
-  display: flex;
-  justify-content: center;
-}
+
 .asu-logo-container{
   width: 35rem;
   padding: 1.5rem 0;
+  margin: 0 auto;
 }
-.asu-logo-container > img{
+.edu-asu-logo{
   width: 100%;
 }
 
-.asu-header-hr{
+.asu-header-hr, .tsa-header-hr{
   margin: 0 auto;
 	border: 1px solid var(--color-hr-seperator);
   width: 85vw;
@@ -143,20 +136,32 @@ html, body{
   height: 0;
 }
 .asu-content{
-  padding: 1rem 12rem;
+  padding: 1rem 0;
   line-height: 1.5rem;
 }
 .asu-content-tabs{
   display: flex;
   justify-content: center;
 }
+
 .asu-tab-item{
-  margin: 0 0.5rem;
+  margin: 0 1.5rem;
   text-decoration: underline;
+  text-align: center;
+}
+.asu-tab-bi{
+  text-align: center;
+  font-size: 1.5rem;
 }
 .asu-tabs-hr{
   border: 1px solid var(--color-hr-seperator);
   width: 55vw;
+}
+.asu-info-content-tab{
+  display: flex;
+}
+.asu-info-stats{
+  margin: 0 auto;
 }
 
 .award-list{
@@ -167,25 +172,44 @@ html, body{
   padding-bottom: 1.5rem;
 }
 
-.tsa-logo-container{
-  width: 11rem;
-  height: 11rem;
-  position: relative;
-  top: -5rem;
-  margin-right: 4rem;
-  margin-left: auto;
+
+.edu-tsa-container{
+  background-color: var(--color-bg-secondary);
+  margin-top: 8rem;
 }
-.tsa-logo-container > img{
+
+.tsa-logo-container{
+  width: 14rem;
+  height: 14rem;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+.edu-tsa-logo{
   width: 100%;
   clip-path: circle();
 }
-.edu-tsa-title{
-  margin-left: 4rem;
+.tsa-content-container{
+  display: flex;
+  padding: 1rem 0;
 }
-
-.edu-title{
-  font-size: 1.5rem;
+.tsa-job-title-list{
+  padding-left: 6vw;
+  line-height: 1.5rem;
 }
-
-
+.event-photo-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 20px;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.tsa-photo{
+  width: 15rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
 /* Education page CSS ENDS here */
