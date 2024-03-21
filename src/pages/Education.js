@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Navbar from '../components/Navbar.js'
 import Footer from '../components/Footer.js'
-import {asu_fullname_logo, uiuc_logo, new_tsa, asu_welcome_event} from '../resources/images/images.js'
+import {asu_fork_logo, asu_fullname_logo, uiuc_logo, new_tsa, asu_welcome_event} from '../resources/images/images.js'
 import {asu_new_year, asu_santa_monica, asu_tisa_basketball, french_home_party, asu_bowling} from '../resources/images/images.js'
+import {filetype_py, filetype_java, filetype_css, filetype_html, filetype_cs, filetype_cpp} from '../resources/images/images.js'
 function Education() {
 
   const [tabShow, setTabShow] = React.useState("information")
@@ -23,7 +24,7 @@ function Education() {
                   <img src={asu_fullname_logo} alt="asu-logo" className="edu-asu-logo" />
                 </a>
               </div>
-              <hr className='asu-header-hr' />
+              {/* <hr className='asu-header-hr' /> */}
               <div className="asu-content">
 
                 <ul className="asu-content-tabs">
@@ -47,6 +48,9 @@ function Education() {
                       <p className="asu-major">Major: Computer Science</p>
                       <p className="asu-gpa">GPA: 3.61</p>
                       <p className="asu-attend-years">Years attended: [2018 - 2022]</p>
+                    </div>
+                    <div className="info-img-container">
+                      <img src={asu_fork_logo} alt="" className="info-fork-img" />
                     </div>
                   </div>
                   <div className={tabShow === "courses" ? "asu-course-content-tab" : "asu-course-content-tab tab-item-hide"}>
@@ -95,7 +99,32 @@ function Education() {
                     </ul>
                   </div>
                   <div className={tabShow === "projects" ? "asu-project-content-tab" : "asu-project-content-tab tab-item-hide"}>
-                    in projects
+                    <ul className="project-lists">{filetype_py} Analyze, merge and stitching photos <span className="project-time">[November 2022]</span> 
+                      <li className="project-list-item">Analyze 3 single color channels, stack and align to form a single RGB color image.</li>
+                      <li className="project-list-item">Stitching pairs of photos to form a panorama image using SIFT and RANSAC methods.</li>
+                    </ul>
+                    <ul className="project-lists"> Design The New Cadre company website <span className="project-time">[May 2022] </span> {filetype_html}{filetype_css}
+                      <li className="project-list-item">Apply UI/UX theory by using Adobe XD to design features based on company demands.</li>
+                      <li className="project-list-item">Establish website basic framework: Login, Home page, search catalog, profile, etc.</li>
+                    </ul>
+                    <ul className="project-lists">{filetype_py} Create Simple IM-System <span className="project-time">[February 2021] </span>
+                      <li className="project-list-item">Created Instant-Message systems that allow clients to communicate with each other.</li>
+                      <li className="project-list-item">Design function to allow clients to add, register and leave the contact or contact lists.</li>
+                    </ul>
+                    <ul className="project-lists">{filetype_cpp} Construct Simple Data Algorithm Sorting <span className="project-time">[November 2020] </span>
+                      <li className="project-list-item">Apply different algorithms to sort and search through objects, items and routes.</li>
+                      <li className="project-list-item">Analyzing and comparing the efficiency of different sorting and searching algorithms.</li>
+                      <li className="project-list-item">Algorithms and data structures used for this project include hash table, red-black tree, etc.</li>
+                    </ul>
+                    <ul className="project-lists">{filetype_java} Build Student attendance record system <span className="project-time">[November 2020] </span>
+                      <li className="project-list-item">Built a GUI with a menu bar with functions to load roaster, add attendance and save files.</li>
+                      <li className="project-list-item">Generate a plot to display the number of attendees and attended time.</li>
+                    </ul>
+                    <ul className="project-lists">{filetype_cs} Code 3D Games <span className="project-time">[December 2019] </span> 
+                      <li className="project-list-item">Built a fusion of a TPS game and a puzzle game and implemented navMesh systems.</li>
+                      <li className="project-list-item">Created a parkour game that manipulates gravity systems and physics.</li>
+                      <li className="project-list-item">Using Github as a version control system. Able to discuss ideas, goals, and present to an open audience.</li>
+                    </ul>
                   </div>
                 </div>
               </div>

@@ -174,9 +174,18 @@ html, body{
 
 .asu-info-content-tab{
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .asu-info-stats{
   margin: 0 auto;
+}
+.info-img-container{
+  width: 4rem;
+  
+}
+.info-fork-img{
+  width: 100%;
 }
 
 .tab-item-hide{
@@ -191,10 +200,28 @@ html, body{
 .course-item {
   list-style: circle;
   margin-left: 1rem;
+  font-size: 15px;
 }
 
-
-
+.asu-project-content-tab{
+  padding: 0 1.5rem;
+}
+.project-lists{
+  margin-bottom: 1.5rem;
+}
+.project-list-item {
+  list-style: disc;
+  margin-left: 1rem;
+  font-size: 15px;
+}
+.project-time{
+  /* color: rgb(84, 84, 84); */
+  font-size: 0.75rem;
+}
+.bi-filetype{
+  height: 1.25rem;
+  width: 1.25rem;
+}
 
 .award-list{
   display: grid;

@@ -62,6 +62,7 @@ table {
 	left: 0;
 	right: 0;
 	z-index: calc(infinity);
+	box-shadow: 0 2px 5px -2px var(--color-text-secondary);
 }
 .navbar-name-logo{
 	color:var(--color-text);
