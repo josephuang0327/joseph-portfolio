@@ -4,6 +4,7 @@ import Footer from '../components/Footer.js'
 import {asu_fork_logo, asu_fullname_logo, uiuc_logo, new_tsa, asu_welcome_event} from '../resources/images/images.js'
 import {asu_new_year, asu_santa_monica, asu_tisa_basketball, french_home_party, asu_bowling} from '../resources/images/images.js'
 import {filetype_py, filetype_java, filetype_css, filetype_html, filetype_cs, filetype_cpp} from '../resources/images/images.js'
+import {id_badge, user_tie} from '../resources/images/images.js'
 function Education() {
 
   const [tabShow, setTabShow] = React.useState("information")
@@ -156,10 +157,10 @@ function Education() {
               <hr className='tsa-header-hr' />
               <div className="tsa-content-container">
                 <ul className="tsa-job-title-list">
-                  <li className="tsa-job-title">ASU TISA - Secretary 
+                  <li className="tsa-job-title">{id_badge}ASU TISA - Secretary 
                     <span className='job-title-years'> [August 2019- August 2020]</span>
                   </li>
-                  <li className="tsa-job-title">ASU TISA - Vice President
+                  <li className="tsa-job-title">{user_tie}ASU TISA - Vice President
                     <span className='job-title-years'> [August 2020-August 2021]</span>
                   </li>
                 </ul>

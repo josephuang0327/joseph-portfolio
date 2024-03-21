@@ -41,3 +41,28 @@ export const filetype_cpp = <svg xmlns="http://www.w3.org/2000/svg" fill="curren
 <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
 <path d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708m-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708"/>
 </svg>
+
+export const user_tie = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="fa-icon fa-user-tie">
+    <path d="M96 128a128 128 0 1 0 256 0A128 128 0 1 0 96 128zm94.5 200.2l18.6 31L175.8 483.1l-36-146.9c-2-8.1-9.8-13.4-17.9-11.3C51.9 342.4 0 405.8 0 481.3c0 17 13.8 30.7 30.7 30.7H162.5c0 0 0 0 .1 0H168 280h5.5c0 0 0 0 .1 0H417.3c17 0 30.7-13.8 30.7-30.7c0-75.5-51.9-138.9-121.9-156.4c-8.1-2-15.9 3.3-17.9 11.3l-36 146.9L238.9 359.2l18.6-31c6.4-10.7-1.3-24.2-13.7-24.2H224 204.3c-12.4 0-20.1 13.6-13.7 24.2z"/></svg>
+
+export const id_badge = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="fa-icon fa-id-badge">
+    <path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zm96 320h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm-32-96a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM144 64h96c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+
+
+// company icons / tools icons / website icons
+export const python_logo = require('./python_logo.svg');
+export const javascript_logo = require('./javascript_logo.svg');
+export const cpp_logo = require('./cpp_logo.svg');
+export const css_logo = require('./css_logo.svg');
+export const html_logo = require('./html_logo.svg');
+
+export const adobe_xd_icon = require('./adobe_xd_icon.svg');
+export const figma_logo = require('./figma_logo.svg');
+export const unity_icon = require('./unity_icon.svg');
+export const vscode_logo = require('./vscode_logo.svg');
+export const github_logo = require('./github_logo.svg');
+export const git_icon = require('./git_icon.svg');
+
+export const react_icon = require('./react_logo.svg');
+export const eclipse_logo = require('./eclipse_logo.svg');
+export const game_maker = require('./game_maker.svg');
