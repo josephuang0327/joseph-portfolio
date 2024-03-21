@@ -22,6 +22,7 @@ code {
   --color-text: #000000;
   --color-text-secondary: rgb(110, 110, 110);
   --color-hr-seperator: rgba(99, 99, 99,0.25);
+  
 }
 
 
@@ -30,8 +31,14 @@ code {
 html, body{
   background-color: var(--color-primary) ;
 	color:var(--color-text);
+  font-size: 125%;
+  font-family: "Baloo Bhaina 2", sans-serif;
 }
 
+button{
+  font-family: "Baloo Bhaina 2", sans-serif;
+  font-size: 1rem;
+}
 /* Home page CSS STARTS here */
 .home-wrapper{
   display: flex;
@@ -70,6 +77,7 @@ html, body{
   border-radius: 16px;
   height: 2rem;
   padding: 0 0.5rem;
+  
 }
 .home-intro-learn-more{
   font-weight: bold;
@@ -96,6 +104,9 @@ html, body{
 
 .bi-plus{
   color: white;
+}
+.bi-home::before, .asu-tab-bi::before{
+  vertical-align: middle;
 }
 
 /* Home page CSS ENDS here */
@@ -176,6 +187,7 @@ html, body{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  gap: 2.5rem;
 }
 .asu-info-stats{
   margin: 0 auto;
@@ -195,12 +207,12 @@ html, body{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 1.25rem;
-  grid-column-gap: 1rem;
+  grid-column-gap: 4rem;
 }
 .course-item {
   list-style: circle;
   margin-left: 1rem;
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 .asu-project-content-tab{
@@ -212,7 +224,7 @@ html, body{
 .project-list-item {
   list-style: disc;
   margin-left: 1rem;
-  font-size: 15px;
+  font-size: 1rem;
 }
 .project-time{
   /* color: rgb(84, 84, 84); */

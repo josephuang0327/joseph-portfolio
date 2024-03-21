@@ -22,3 +22,6 @@ svg{
     width: 0.625rem;
     margin-right: 0.25rem;
 }
+.bi-footer::before{
+    vertical-align: middle;
+}

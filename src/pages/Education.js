@@ -43,6 +43,9 @@ function Education() {
                 </ul>
                 <div className="asu-tab-content">
                   <div className={tabShow === "information" ? "asu-info-content-tab" : "asu-info-content-tab tab-item-hide"}>
+                    <div className="info-img-container">
+                      <img src={asu_fork_logo} alt="" className="info-fork-img" />
+                    </div>
                     <div className="asu-info-stats">
                       <p className="asu-school">School: Ira A. Fulton Schools of Engineering</p>
                       <p className="asu-degree">Degree: Bachelor of Science</p>
@@ -50,9 +53,7 @@ function Education() {
                       <p className="asu-gpa">GPA: 3.61</p>
                       <p className="asu-attend-years">Years attended: [2018 - 2022]</p>
                     </div>
-                    <div className="info-img-container">
-                      <img src={asu_fork_logo} alt="" className="info-fork-img" />
-                    </div>
+
                   </div>
                   <div className={tabShow === "courses" ? "asu-course-content-tab" : "asu-course-content-tab tab-item-hide"}>
                     <ul className="course-list">
@@ -104,7 +105,7 @@ function Education() {
                       <li className="project-list-item">Analyze 3 single color channels, stack and align to form a single RGB color image.</li>
                       <li className="project-list-item">Stitching pairs of photos to form a panorama image using SIFT and RANSAC methods.</li>
                     </ul>
-                    <ul className="project-lists"> Design The New Cadre company website <span className="project-time">[May 2022] </span> {filetype_html}{filetype_css}
+                    <ul className="project-lists">{filetype_html}{filetype_css} Design The New Cadre company website <span className="project-time">[May 2022] </span> 
                       <li className="project-list-item">Apply UI/UX theory by using Adobe XD to design features based on company demands.</li>
                       <li className="project-list-item">Establish website basic framework: Login, Home page, search catalog, profile, etc.</li>
                     </ul>

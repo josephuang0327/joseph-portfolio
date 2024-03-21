@@ -6,9 +6,9 @@ function Footer() {
       <div className="footer-wrapper">
       <footer className="footer-container">
           <div className="social-contact">
-            <button href="https://github.com/josephuang0327" className="footer-github bi-github"></button>
-            <button href="mailto:josephuang0327@gmail.com" className="footer-email bi-envelope-fill"></button>
-            <button href="tel:+886932055795" className="footer-phone-number bi-telephone-fill"></button>
+            <button href="https://github.com/josephuang0327" className="footer-github bi-github bi-footer"></button>
+            <button href="mailto:josephuang0327@gmail.com" className="footer-email bi-envelope-fill bi-footer"></button>
+            <button href="tel:+886932055795" className="footer-phone-number bi-telephone-fill bi-footer"></button>
           </div>
 
           <p className="footer-rights-reserved">

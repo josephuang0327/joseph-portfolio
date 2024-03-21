@@ -13,10 +13,10 @@ function Home(){
                     <h1 className="home-intro">Hey, This is <br /> Joseph Huang</h1>
                     <h2 className="home-intro-description">A Web Developer</h2>
                     <button className="home-intro-btn home-intro-learn-more">
-                        Learn more <span className='bi bi-plus'></span>
+                        Learn more <span className='bi-home bi-plus'></span>
                     </button>
                     <button className="home-intro-btn home-intro-download">
-                        Download CV <span className='bi bi-download'></span>
+                        Download CV <span className='bi-home bi-download'></span>
                     </button>
                 </div>
                 <div className='img-container'><img src={port_test} alt="home-photo" className="home-photo" /></div> 

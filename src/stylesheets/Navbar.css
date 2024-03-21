@@ -72,20 +72,19 @@ a, a:visited{
 }
 .navbar-tabs{
     display:flex;
-   
+   	
 }
 .navbar-tabs > li{
     margin: 0 1rem;
 }
+
 .bi-download{
 	-webkit-text-stroke: 0.5px black;
 }
 .bi-plus{
 	-webkit-text-stroke: 0.5px white;
 }
-.nav-item-open{
-    
-}
+
 .nav-item-close{
     display: none;
 }
